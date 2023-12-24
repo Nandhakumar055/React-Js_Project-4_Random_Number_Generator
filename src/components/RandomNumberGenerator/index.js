@@ -13,18 +13,20 @@ class RandomNumberGenerator extends Component {
 
     return (
       <div className="bg-container">
-        <h1 className="heading">Random Number</h1>
-        <p className="note-message">
-          Generate a random number in the range of 0 to 100
-        </p>
-        <button
-          type="button"
-          onClick={this.generateNumber}
-          className="generate-button"
-        >
-          Generate
-        </button>
-        <p className="generate-number-text">{randomNumber}</p>
+        <div className="card-container">
+          <h1 className="heading">Random Number</h1>
+          <p className="note-message">
+            Generate a random number in the range of 0 to 100
+          </p>
+          <button
+            type="button"
+            onClick={this.generateNumber}
+            className="generate-button"
+          >
+            Generate
+          </button>
+          <p className="generate-number-text">{randomNumber}</p>
+        </div>
       </div>
     )
   }
